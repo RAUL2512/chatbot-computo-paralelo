@@ -34,17 +34,17 @@ def motor_nlu_db(mensaje):
         if conn: conn.close()
         return f"Error de conexión: {str(e)}"
 
-# Interfaz visual HTML
+# Interfaz visual HTML Modificada
 HTML_TEMPLATE = '''
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chatbot TICs - Cómputo Paralelo</title>
+    <title>COMPUTO PARALELO ITAO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body { font-family: sans-serif; background-color: #f4f4f9; display: flex; justify-content: center; padding: 20px; }
         .chat-container { width: 100%; max-width: 500px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h2 { color: #333; text-align: center; }
+        h2 { color: #333; text-align: center; text-transform: uppercase; }
         #chat-box { height: 300px; border: 1px solid #ddd; overflow-y: scroll; padding: 10px; margin-bottom: 10px; background: #fafafa; display: flex; flex-direction: column; }
         .msg { margin: 5px 0; padding: 8px 12px; border-radius: 15px; max-width: 80%; }
         .user { align-self: flex-end; background: #007bff; color: white; }
@@ -56,9 +56,9 @@ HTML_TEMPLATE = '''
 </head>
 <body>
     <div class="chat-container">
-        <h2>🤖 Chatbot Paralelo</h2>
+        <h2>💻 COMPUTO PARALELO ITAO</h2>
         <div id="chat-box">
-            <div class="msg bot">¡Hola! Soy tu asistente de TICs. Pregúntame sobre Cómputo Paralelo.</div>
+            <div class="msg bot">¡Hola! Soy tu asistente de IIA. Pregúntame sobre Cómputo Paralelo.</div>
         </div>
         <div class="input-area">
             <input type="text" id="userInput" placeholder="Escribe un tema...">
